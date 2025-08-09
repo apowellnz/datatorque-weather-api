@@ -1,0 +1,20 @@
+# DataTorque. 
+
+This is just a really basic UI. To run just npm i and npm run dev. I didn't configure to run with the API. So you might need to edit the .env file URL to allign with your local machine. Because the ports may change...
+
+Honestly I used a little AI to help me here to get this botostraped, but then tweeked it afterwards. I turned off CORS and there is no CSP configured. Nor auth. so should just work... 
+
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+

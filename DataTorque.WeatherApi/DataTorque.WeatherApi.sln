@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTorque.Shared", "DataTo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTorque.Services", "DataTorque.Services\DataTorque.Services.csproj", "{A9D2ECFE-CEA6-42DD-BF8F-3FB9E64014CA}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "datatorque.frontend", "DataTorque.Frontend\datatorque.frontend.esproj", "{7D338E31-279D-4C34-B1A7-0B043CA25432}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{A9D2ECFE-CEA6-42DD-BF8F-3FB9E64014CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9D2ECFE-CEA6-42DD-BF8F-3FB9E64014CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9D2ECFE-CEA6-42DD-BF8F-3FB9E64014CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D338E31-279D-4C34-B1A7-0B043CA25432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D338E31-279D-4C34-B1A7-0B043CA25432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D338E31-279D-4C34-B1A7-0B043CA25432}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7D338E31-279D-4C34-B1A7-0B043CA25432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D338E31-279D-4C34-B1A7-0B043CA25432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D338E31-279D-4C34-B1A7-0B043CA25432}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

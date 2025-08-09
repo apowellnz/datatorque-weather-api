@@ -1,0 +1,155 @@
+.weather-component {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.weather-component h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.weather-form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-group button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.button-group button[type="submit"]:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.button-group button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.button-group button[type="button"]:hover:not(:disabled) {
+  background-color: #545b62;
+}
+
+.button-group button:disabled {
+  background-color: #e9ecef;
+  color: #6c757d;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.error-message h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.error-message p {
+  margin: 0;
+}
+
+.weather-data {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 20px;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+}
+
+.weather-data h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.weather-details {
+  display: grid;
+  gap: 10px;
+}
+
+.weather-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+
+.weather-item .label {
+  font-weight: bold;
+}
+
+.weather-item .value {
+  font-size: 18px;
+  color: #0f5132;
+}
+
+@media (max-width: 768px) {
+  .weather-component {
+    padding: 10px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .weather-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
