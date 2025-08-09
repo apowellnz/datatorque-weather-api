@@ -26,6 +26,8 @@ namespace DataTorque.Services.Weather
 
         public async Task<WeatherAndSuggestionRecord> GetWeatherWithSuggestionsByCoordinates(double? latitude, double? longitude)
         {
+            // suggestion - documents states some data is updated every 10 minutes. So I would suggest a memory cache for 5 or 10 minutes to reduce requests. 
+            
             if (!latitude.HasValue || !longitude.HasValue)
                 throw new ArgumentException($"latitude & longitude are required");
 
