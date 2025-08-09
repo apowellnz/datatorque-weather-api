@@ -9,6 +9,8 @@ namespace DataTorque.WeatherApi.Controllers
     {
         private readonly IWeatherService _weatherService;
         private readonly ILogger<WeatherController> _logger;
+        private static int _requestCounter = 0;
+        private static readonly object _lockObject = new object();
 
         public WeatherController(IWeatherService weatherService, ILogger<WeatherController> logger)
         {
@@ -19,6 +21,17 @@ namespace DataTorque.WeatherApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetWeather([FromQuery] double latitude, [FromQuery] double longitude)
         {
+            // request returns 503 evey 5 requests... I'd rather do a 423 or something else. 
+            lock (_lockObject)
+            {
+                _requestCounter++;
+                if (_requestCounter % 5 == 0)
+                {
+                    _logger.LogWarning("Simulating upstream failure for request #{RequestNumber}", _requestCounter);
+                    return StatusCode(503, new { error = "Service temporarily unavailable" });
+                }
+            }
+
             try
             {
                 var weatherData = await _weatherService.GetWeatherWithSuggestionsByCoordinates(latitude, longitude);
